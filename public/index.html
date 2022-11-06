@@ -26,7 +26,7 @@
     -->
     <title>YouFrame</title>
     <style>
-      ul {
+      .ul {
   display: inline-grid;
   grid-auto-flow: row;
   grid-gap: 24px;
@@ -34,44 +34,29 @@
   margin: auto;
 }
 
-p {
-  color: white;
-}
-
 @media (min-width: 500px) {
-  ul {
+  .ul {
     grid-auto-flow: column;
   }
 }
 
-a {
+.a {
   color: white;
   text-decoration: none;
   box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
 }
 
-a:hover {
+.a:hover {
   box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
 
-li:last-child {
+.li:last-child {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-li:hover ~ li p {
+.li:hover ~ li p {
   animation: wave-animation 0.3s infinite;
-}
-
-/* below is just for demo styling */
-
-div {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  background-color: #002a38;
-  line-height: 1.3;
-  font-family: Menlo, monospace;
 }
 
 @keyframes wave-animation {
@@ -85,6 +70,16 @@ div {
   75% {
     transform: rotate(-15deg);
   }
+}
+/* below is just for demo styling */
+
+.div {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #002a38;
+  line-height: 1.3;
+  font-family: Menlo, monospace;
 }
 
     </style>
@@ -104,15 +99,18 @@ div {
     -->
     
 <footer>
-<div>
-  <ul>
-    <li><a href="https://twitter.com/prajwalverma1">Twitter</a></li>
-    <li><a href="https://www.snapchat.com/add/prajwalverma?share_id=goYrUbEfXR8&locale=en-IN">Snapchat</a></li>
-    <li><a href="mailto:princeeprajwal@gmail.com">Email</a></li>
-    <li><a href="https://www.instagram.com/prajawalverma/">Instagram</a></li>
-    <li><a href="https://github.com/prajwalverma">Github</a></li>
-    <li>
-      <p>👋 Hi There!</p>
+<div class="div">
+  <ul class="ul">
+    <li class="li">
+      <p Style="color: white;">&copy; Prajawal Verma</p>
+    </li>
+    <li class="li"><a class="a" href="https://twitter.com/prajwalverma1">Twitter</a></li>
+    <li class="li"><a class="a" href="https://www.snapchat.com/add/prajwalverma?share_id=goYrUbEfXR8&locale=en-IN">Snapchat</a></li>
+    <li class="li"><a class="a" href="mailto:princeeprajwal@gmail.com">Email</a></li>
+    <li class="li"><a class="a" href="https://www.instagram.com/prajawalverma/">Instagram</a></li>
+    <li class="li"><a class="a" href="https://github.com/prajwalverma">Github</a></li>
+    <li class="li">
+      <p Style="color: white;">👋 Hi There!</p>
     </li>
   </ul>
 </div>
